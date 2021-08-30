@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style3.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gloria+Hallelujah&family=Roboto&family=Shrikhand&display=swap');
+    </style>
+    <title>HomePage</title>
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <div class="containerone">
+                <div class="flex-wrapper flex-space-between">
+                    <div class="contact-link flex-no-grow">
+                        <a href="tel:+2349043609897"> <i class="fa fa-phone"></i> +2349043609897</a>
+                        <a href="#" id="sp"> <i class="fab fa-whatsapp"></i> chat with us</a>
+                        <a href="mailto:info@travelfast.com"> <i class="fa fa-envelope"></i> info@travelfast.com</a>
+                    </div>
+                    <div class="flex-no-grow">
+                        <select name="names" id="curr">
+                            <option value="currency">NAIRA</option>
+                            <option value="currency">USD</option>
+                        </select>
+                        <a href="#index.html" id="sp"> login</a>
+                        <a href="#signup.html"> signup</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-menu">
+            <div class="containermenu">
+                <div class="menu-wrap flex-space-between">
+                    <img src="images/logo.png" id="logo" alt="">
+                    <ul id="secondnav">
+                        <li><a href="homepage.html">home</a></li>
+                        <li><a href="homepage.html">flight</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="service.html">our services</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="complaint.html">complaint/feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <img src="images/logo.png" id="logophone" alt="">
+        <a href="javascript:void(0);" class="iconmenu" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <img src="images/Screenshot (8).png" id="bghead" alt="img" style="width:100%;">
+
+    </header>
+    <section class="carouselsection">
+        <div class="section1">
+            <div id="myCarousel" class="carousel-slide" data-ride="carousel">
+                <!-- Indicators -->
+                <!-- <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol> -->
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/maldives.png" alt="" style="width:100%;">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/abuja.png" alt="abuja" style="width:100%;">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/double-lagos_abuja2london.png" alt="double-lagos_abuja2london"
+                            style="width:100%;">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/Screenshot (8).png" alt="img" style="width:100%;">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/accra.png" alt="accra" style="width:100%;">
+                    </div>
+                </div>
+
+                <!-- Left and right controls  -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="bookingflight">
+        <div class="containerone">
+            <div class="bookingmenu">
+                <h1>Search and Book Cheap Flights</h1>
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'booking', 'tabcontent')" id="defaultOpen">Book a
+                        Flight</button>
+                    <button class="tablinks" onclick="openTab(event, 'manage', 'tabcontent')">Manage my Booking</button>
+                </div>
+                <div id="booking" class="tabcontent p-3">
+                    <div class="tab">
+                        <button class="tablinks active" onclick="openTab(event, 'oneway', 'tabcontent2')"
+                            id="defaultOpen">One Way</button>
+                        <button class="tablinks" onclick="openTab(event, 'roundtrip', 'tabcontent2')">Round
+                            Trip</button>
+                        <button class="tablinks" onclick="openTab(event, 'multipledestination', 'tabcontent2')">Multiple
+                            Destionation</button>
+
+                    </div>
+                    <div id="oneway" class="tabcontent2" style="display: block;">
+
+                        <form id="form1">
+                            <div class="tabwrap">
+                                <div class="input-container">
+                                    <i class="fas fa-plane-departure icon"></i>
+                                    <input class="input-field" type="text" placeholder="Enter name of city or airport"
+                                        name="airport" list="fromWhereList" name="fromWhere" id="fromWhere">
+                                    <datalist id="fromWhereList">
+                                        <option value="Abuja Nnamdi Azikiwe International Airport (ABV)">
+                                        <option value="Akure Airport (AKR)">
+                                        <option value="Bauchi Airport (BCU)">
+                                        <option value="Benin City Airport (BNI)">
+                                        <option value="Calabar Airport (CBQ)">
+                                        <option value="Enugu Airport (ENU)">
+                                        <option value="Ibadan Airport (IBA)">
+                                        <option value="Ilorin Airport (ILR)">
+                                        <option value="Jos Airport (JOS)">
+                                        <option value="Kaduna Airport (KAD)">
+                                        <option value="Aminu Kano International Apt Airport (KAN)">
+                                        <option value="Lagos Murtala Muhammed Airport (LOS)">
+                                        <option value="Maiduguri Airport (MIU)">
+                                        <option value="Makurdi Airport (MDI)">
+                                        <option value="Minna Airport (MXJ)	">
+                                        <option value="Port Harcourt Airport (PHC)">
+                                        <option value="Sokoto Airport (SKO)">
+                                        <option value="Victoria Island Airport (QVL)">
+                                        <option value="Warri Airport (QRW)">
+                                        <option value="Yola Airport (YOL)">
+                                        <option value="Zaria Airport (ZAR)">
+                                        <option value="Anambra International Airport">
+                                    </datalist>
+
+                                    <i class="fas fa-plane-arrival iconspace"></i>
+                                    <input class="input-field" type="text" placeholder="Enter name of city or airport"
+                                        name="airport" list="fromWhereList" name="toWhere" id="towWhere">
+                                    <datalist id="towhereList">
+                                        <option value="Abuja Nnamdi Azikiwe International Airport (ABV)">
+                                        <option value="Akure Airport (AKR)">
+                                        <option value="Bauchi Airport (BCU)">
+                                        <option value="Benin City Airport (BNI)">
+                                        <option value="Calabar Airport (CBQ)">
+                                        <option value="Enugu Airport (ENU)">
+                                        <option value="Ibadan Airport (IBA)">
+                                        <option value="Ilorin Airport (ILR)">
+                                        <option value="Jos Airport (JOS)">
+                                        <option value="Kaduna Airport (KAD)">
+                                        <option value="Aminu Kano International Apt Airport (KAN)">
+                                        <option value="Lagos Murtala Muhammed Airport (LOS)">
+                                        <option value="Maiduguri Airport (MIU)">
+                                        <option value="Makurdi Airport (MDI)">
+                                        <option value="Minna Airport (MXJ)	">
+                                        <option value="Port Harcourt Airport (PHC)">
+                                        <option value="Sokoto Airport (SKO)">
+                                        <option value="Victoria Island Airport (QVL)">
+                                        <option value="Warri Airport (QRW)">
+                                        <option value="Yola Airport (YOL)">
+                                        <option value="Zaria Airport (ZAR)">
+                                        <option value="Anambra International Airport">
+                                    </datalist>
+
+                                </div>
+
+                            </div>
+
+                            <div class="tabwrap">
+                                <div class="input-container">
+
+                                    <i class="far fa-calendar-alt icon"></i>
+                                    <input type="date" id="myDate" value="date">
+
+                                    <i class="fas fa-chair iconspace"></i>
+                                    <select name="names" id="seatclass">
+                                        <option value="select seat">Economy Class</option>
+                                        <option value="business">Business Class</option>
+                                        <option value="business ">First Class</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="tabwrap">
+                                <div class="input-container flex-wrapper">
+                                    <div class="flex-wrapper full">
+                                        <i class="fas fa-male icon"></i>
+                                        <select name="names" id="adult" class="full">
+                                            <option value="adult">1 Adult</option>
+                                            <option value="adult">2 Adult (12yrs+)</option>
+                                            <option value="adult">3 Adult (12yrs+)</option>
+                                            <option value="adult">4 Adult (12yrs+)</option>
+                                            <option value="adult">5 Adult (12yrs+)</option>
+                                            <option value="adult">6 Adult (12yrs+)</option>
+                                            <option value="adult">7 Adult (12yrs+)</option>
+                                            <option value="adult">8 Adult (12yrs+)</option>
+                                            <option value="adult">9 Adult (12yrs+)</option>
+                                        </select>
+                                    </div>
+                                    <div class="flex-wrapper full">
+
+                                        <i class="fas fa-child iconspace"></i>
+                                        <select name="names" id="adult" class="full">
+                                            <option value="child">0 Child</option>
+                                            <option value="child">1 Child</option>
+                                            <option value="child">2 Child (2-11yrs)</option>
+                                            <option value="child">3 Child (2-11yrs)</option>
+                                            <option value="child">4 Child (2-11yrs)</option>
+                                            <option value="child">5 Child (2-11yrs)</option>
+                                            <option value="child">6 Child (2-11yrs)</option>
+                                        </select>
+                                    </div>
+                                    <div class="flex-wrapper full">
+                                        <i class="fas fa-child iconspace"></i>
+                                        <select name="names" id="adult" class="full">
+                                            <option value="infant">0 Infant</option>
+                                            <option value="infant">1 Infant</option>
+                                            <option value="infant">2 Infant (-2yrs)</option>
+                                            <option value="infant">3 Infant (-2yrs)</option>
+                                            <option value="infant">4 Infant(-2yrs)</option>
+                                            <option value="infant">5 Infant (-2yrs)</option>
+                                            <option value="infant">Infant (-2yrs)</option>
+                                        </select>
+                                    </div>
+                                    <div class="flex-wrapper full">
+                                        <input type="submit" value="SEARCH FLIGHT"
+                                            class="full ml-1 margin-left: 1rem" />
+                                        <i class="fas fa-search" id="iconone"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="roundtrip" class="tabcontent2" style="display: none;">
+                        <form id="form1">
+                            <div class="tabwrap">
+                                <div class="input-container">
+                                    <i class="fas fa-plane-departure icon"></i>
+                                    <input class="input-field" type="text" placeholder="Enter name of city or airport"
+                                        name="airport" list="fromWhereList" name="fromWhere" id="fromWhere">
+                                    <datalist id="fromWhereList">
+                                        <option value="Abuja Nnamdi Azikiwe International Airport (ABV)">
+                                        <option value="Akure Airport (AKR)">
+                                        <option value="Bauchi Airport (BCU)">
+                                        <option value="Benin City Airport (BNI)">
+                                        <option value="Calabar Airport (CBQ)">
+                                        <option value="Enugu Airport (ENU)">
+                                        <option value="Ibadan Airport (IBA)">
+                                        <option value="Ilorin Airport (ILR)">
+                                        <option value="Jos Airport (JOS)">
+                                        <option value="Kaduna Airport (KAD)">
+                                        <option value="Aminu Kano International Apt Airport (KAN)">
+                                        <option value="Lagos Murtala Muhammed Airport (LOS)">
+                                        <option value="Maiduguri Airport (MIU)">
+                                        <option value="Makurdi Airport (MDI)">
+                                        <option value="Minna Airport (MXJ)	">
+                                        <option value="Port Harcourt Airport (PHC)">
+                                        <option value="Sokoto Airport (SKO)">
+                                        <option value="Victoria Island Airport (QVL)">
+                                        <option value="Warri Airport (QRW)">
+                                        <option value="Yola Airport (YOL)">
+                                        <option value="Zaria Airport (ZAR)">
+                                        <option value="Anambra International Airport">
+                                    </datalist>
+
+                                    <i class="fas fa-plane-arrival iconspace"></i>
+                                    <input class="input-field" type="text" placeholder="Enter name of city or airport"
+                                        name="airport" list="fromWhereList" name="toWhere" id="towWhere">
+                                    <datalist id="towhereList">
+                                        <option value="Abuja Nnamdi Azikiwe International Airport (ABV)">
+                                        <option value="Akure Airport (AKR)">
+                                        <option value="Bauchi Airport (BCU)">
+                                        <option value="Benin City Airport (BNI)">
+                                        <option value="Calabar Airport (CBQ)">
+                                        <option value="Enugu Airport (ENU)">
+                                        <option value="Ibadan Airport (IBA)">
+                                        <option value="Ilorin Airport (ILR)">
+                                        <option value="Jos Airport (JOS)">
+                                        <option value="Kaduna Airport (KAD)">
+                                        <option value="Aminu Kano International Apt Airport (KAN)">
+                                        <option value="Lagos Murtala Muhammed Airport (LOS)">
+                                        <option value="Maiduguri Airport (MIU)">
+                                        <option value="Makurdi Airport (MDI)">
+                                        <option value="Minna Airport (MXJ)	">
+                                        <option value="Port Harcourt Airport (PHC)">
+                                        <option value="Sokoto Airport (SKO)">
+                                        <option value="Victoria Island Airport (QVL)">
+                                        <option value="Warri Airport (QRW)">
+                                        <option value="Yola Airport (YOL)">
+                                        <option value="Zaria Airport (ZAR)">
+                                        <option value="Anambra International Airport">
+                                    </datalist>
+
+                                </div>
+
+                            </div>
+
+                            <div class="tabwrap2">
+                                <div class="input-container">
+                                    <i class="far fa-calendar-alt icon"></i>
+                                    <input type="date" id="myDate" value="date">
+
+                                    <i class="far fa-calendar-alt iconspace"></i>
+                                    <input type="date" id="myDate" value="date">
+
+                                    <i class="fas fa-chair iconspace"></i>
+                                    <select name="names" id="seatclass">
+                                        <option value="select seat">Economy Class</option>
+                                        <option value="business">Business Class</option>
+                                        <option value="business ">First Class</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="tabwrap">
+                                <div class="input-container flex-wrapper">
+                                    <div class="flex-wrapper full">
+                                        <i class="fas fa-male icon"></i>
+                                        <select name="names" id="adult" class="full">
+                                            <option value="adult">1 Adult</option>
+                                            <option value="adult">2 Adult (12yrs+)</option>
+                                            <option value="adult">3 Adult (12yrs+)</option>
+                                            <option value="adult">4 Adult (12yrs+)</option>
+                                            <option value="adult">5 Adult (12yrs+)</option>
+                                            <option value="adult">6 Adult (12yrs+)</option>
+                                            <option value="adult">7 Adult (12yrs+)</option>
+                                            <option value="adult">8 Adult (12yrs+)</option>
+                                            <option value="adult">9 Adult (12yrs+)</option>
+                                        </select>
+                                    </div>
+                                    <div class="flex-wrapper full">
+
+                                        <i class="fas fa-child iconspace"></i>
+                                        <select name="names" id="adult" class="full">
+                                            <option value="child">0 Child</option>
+                                            <option value="child">1 Child</option>
+                                            <option value="child">2 Child (2-11yrs)</option>
+                                            <option value="child">3 Child (2-11yrs)</option>
+                                            <option value="child">4 Child (2-11yrs)</option>
+                                            <option value="child">5 Child (2-11yrs)</option>
+                                            <option value="child">6 Child (2-11yrs)</option>
+                                        </select>
+                                    </div>
+                                    <div class="flex-wrapper full">
+                                        <i class="fas fa-child iconspace"></i>
+                                        <select name="names" id="adult" class="full">
+                                            <option value="infant">0 Infant</option>
+                                            <option value="infant">1 Infant</option>
+                                            <option value="infant">2 Infant (-2yrs)</option>
+                                            <option value="infant">3 Infant (-2yrs)</option>
+                                            <option value="infant">4 Infant(-2yrs)</option>
+                                            <option value="infant">5 Infant (-2yrs)</option>
+                                            <option value="infant">Infant (-2yrs)</option>
+                                        </select>
+                                    </div>
+                                    <div class="flex-wrapper full">
+                                        <input type="submit" value="SEARCH FLIGHT"
+                                            class="full ml-1 margin-left: 1rem" />
+                                        <i class="fas fa-search" id="iconone"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div id="multipledestination" class="tabcontent2" style="display: none;">
+                        <form id="form1">
+                            <div class="tabwrap">
+                                <div class="input-container">
+                                    <i class="fas fa-plane-departure icon"></i>
+                                    <input class="input-field" type="text" placeholder="From Where?" name="airport"
+                                        list="fromWhereList" name="fromWhere" id="fromWhere">
+                                    <datalist id="fromWhereList">
+                                        <option value="Abuja Nnamdi Azikiwe International Airport (ABV)">
+                                        <option value="Akure Airport (AKR)">
+                                        <option value="Bauchi Airport (BCU)">
+                                        <option value="Benin City Airport (BNI)">
+                                        <option value="Calabar Airport (CBQ)">
+                                        <option value="Enugu Airport (ENU)">
+                                        <option value="Ibadan Airport (IBA)">
+                                        <option value="Ilorin Airport (ILR)">
+                                        <option value="Jos Airport (JOS)">
+                                        <option value="Kaduna Airport (KAD)">
+                                        <option value="Aminu Kano International Apt Airport (KAN)">
+                                        <option value="Lagos Murtala Muhammed Airport (LOS)">
+                                        <option value="Maiduguri Airport (MIU)">
+                                        <option value="Makurdi Airport (MDI)">
+                                        <option value="Minna Airport (MXJ)	">
+                                        <option value="Port Harcourt Airport (PHC)">
+                                        <option value="Sokoto Airport (SKO)">
+                                        <option value="Victoria Island Airport (QVL)">
+                                        <option value="Warri Airport (QRW)">
+                                        <option value="Yola Airport (YOL)">
+                                        <option value="Zaria Airport (ZAR)">
+                                        <option value="Anambra International Airport">
+                                    </datalist>
+
+                                    <i class="fas fa-plane-arrival iconspace"></i>
+                                    <input class="input-field" type="text" placeholder="To Where?" name="airport"
+                                        list="tohereList" name="toWhere" id="towWhere">
+                                    <datalist id="towhereList">
+                                        <option value="Abuja Nnamdi Azikiwe International Airport (ABV)">
+                                        <option value="Akure Airport (AKR)">
+                                        <option value="Bauchi Airport (BCU)">
+                                        <option value="Benin City Airport (BNI)">
+                                        <option value="Calabar Airport (CBQ)">
+                                        <option value="Enugu Airport (ENU)">
+                                        <option value="Ibadan Airport (IBA)">
+                                        <option value="Ilorin Airport (ILR)">
+                                        <option value="Jos Airport (JOS)">
+                                        <option value="Kaduna Airport (KAD)">
+                                        <option value="Aminu Kano International Apt Airport (KAN)">
+                                        <option value="Lagos Murtala Muhammed Airport (LOS)">
+                                        <option value="Maiduguri Airport (MIU)">
+                                        <option value="Makurdi Airport (MDI)">
+                                        <option value="Minna Airport (MXJ)	">
+                                        <option value="Port Harcourt Airport (PHC)">
+                                        <option value="Sokoto Airport (SKO)">
+                                        <option value="Victoria Island Airport (QVL)">
+                                        <option value="Warri Airport (QRW)">
+                                        <option value="Yola Airport (YOL)">
+                                        <option value="Zaria Airport (ZAR)">
+                                        <option value="Anambra International Airport">
+                                    </datalist>
+
+                                    <i class="far fa-calendar-alt icon3"></i>
+                                    <input type="date" id="myDate" value="date">
+                                </div>
+
+                            </div>
+                            <div class="tabwrap">
+                                <div class="input-container">
+                                    <i class="fas fa-plane-departure icon"></i>
+                                    <input class="input-field" type="text" placeholder="From Where?" name="airport"
+                                        list="fromWhereList" name="fromWhere" id="fromWhere">
+                                    <datalist id="fromWhereList">
+                                        <option value="Abuja Nnamdi Azikiwe International Airport (ABV)">
+                                        <option value="Akure Airport (AKR)">
+                                        <option value="Bauchi Airport (BCU)">
+                                        <option value="Benin City Airport (BNI)">
+                                        <option value="Calabar Airport (CBQ)">
+                                        <option value="Enugu Airport (ENU)">
+                                        <option value="Ibadan Airport (IBA)">
+                                        <option value="Ilorin Airport (ILR)">
+                                        <option value="Jos Airport (JOS)">
+                                        <option value="Kaduna Airport (KAD)">
+                                        <option value="Aminu Kano International Apt Airport (KAN)">
+                                        <option value="Lagos Murtala Muhammed Airport (LOS)">
+                                        <option value="Maiduguri Airport (MIU)">
+                                        <option value="Makurdi Airport (MDI)">
+                                        <option value="Minna Airport (MXJ)	">
+                                        <option value="Port Harcourt Airport (PHC)">
+                                        <option value="Sokoto Airport (SKO)">
+                                        <option value="Victoria Island Airport (QVL)">
+                                        <option value="Warri Airport (QRW)">
+                                        <option value="Yola Airport (YOL)">
+                                        <option value="Zaria Airport (ZAR)">
+                                        <option value="Anambra International Airport">
+                                    </datalist>
+
+                                    <i class="fas fa-plane-arrival iconspace"></i>
+                                    <input class="input-field" type="text" placeholder="To Where?" name="airport"
+                                        list="tohereList" name="toWhere" id="towWhere">
+                                    <datalist id="towhereList">
+                                        <option value="Abuja Nnamdi Azikiwe International Airport (ABV)">
+                                        <option value="Akure Airport (AKR)">
+                                        <option value="Bauchi Airport (BCU)">
+                                        <option value="Benin City Airport (BNI)">
+                                        <option value="Calabar Airport (CBQ)">
+                                        <option value="Enugu Airport (ENU)">
+                                        <option value="Ibadan Airport (IBA)">
+                                        <option value="Ilorin Airport (ILR)">
+                                        <option value="Jos Airport (JOS)">
+                                        <option value="Kaduna Airport (KAD)">
+                                        <option value="Aminu Kano International Apt Airport (KAN)">
+                                        <option value="Lagos Murtala Muhammed Airport (LOS)">
+                                        <option value="Maiduguri Airport (MIU)">
+                                        <option value="Makurdi Airport (MDI)">
+                                        <option value="Minna Airport (MXJ)	">
+                                        <option value="Port Harcourt Airport (PHC)">
+                                        <option value="Sokoto Airport (SKO)">
+                                        <option value="Victoria Island Airport (QVL)">
+                                        <option value="Warri Airport (QRW)">
+                                        <option value="Yola Airport (YOL)">
+                                        <option value="Zaria Airport (ZAR)">
+                                        <option value="Anambra International Airport">
+                                    </datalist>
+
+                                    <i class="far fa-calendar-alt icon3"></i>
+                                    <input type="date" id="myDate" value="date">
+                                </div>
+
+                            </div>
+                            <div class="tabwrap">
+                                <div class="input-container">
+                                    <i class="fas fa-male icon"></i>
+                                    <select name="names" id="adult">
+                                        <option value="adult">1 Adult</option>
+                                        <option value="adult">2 Adult (12yrs+)</option>
+                                        <option value="adult">3 Adult (12yrs+)</option>
+                                        <option value="adult">4 Adult (12yrs+)</option>
+                                        <option value="adult">5 Adult (12yrs+)</option>
+                                        <option value="adult">6 Adult (12yrs+)</option>
+                                        <option value="adult">7 Adult (12yrs+)</option>
+                                        <option value="adult">8 Adult (12yrs+)</option>
+                                        <option value="adult">9 Adult (12yrs+)</option>
+                                    </select>
+
+                                    <i class="fas fa-child iconspace"></i>
+                                    <select name="names" id="adult">
+                                        <option value="child">0 Child</option>
+                                        <option value="child">1 Child</option>
+                                        <option value="child">2 Child (2-11yrs)</option>
+                                        <option value="child">3 Child (2-11yrs)</option>
+                                        <option value="child">4 Child (2-11yrs)</option>
+                                        <option value="child">5 Child (2-11yrs)</option>
+                                        <option value="child">6 Child (2-11yrs)</option>
+                                    </select>
+
+                                    <i class="fas fa-child iconspace"></i>
+                                    <select name="names" id="adult">
+                                        <option value="infant">0 Infant</option>
+                                        <option value="infant">1 Infant</option>
+                                        <option value="infant">2 Infant (-2yrs)</option>
+                                        <option value="infant">3 Infant (-2yrs)</option>
+                                        <option value="infant">4 Infant(-2yrs)</option>
+                                        <option value="infant">5 Infant (-2yrs)</option>
+                                        <option value="infant">Infant (-2yrs)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="tabwrap">
+                                <div class="input-container flex-wrapper">
+                                    <div class="flex-wrapper full">
+                                        <i class="fas fa-chair icon"></i>
+                                        <select name="names" id="seatclass" class="full">
+                                            <option value="select seat">Economy Class</option>
+                                            <option value="business">Business Class</option>
+                                            <option value="business ">First Class</option>
+                                        </select>
+                                    </div>
+                                    <div class="flex-wrapper full">
+                                        <input type="submit" value="SEARCH FLIGHT"
+                                            class="full ml-1 margin-left: 1rem" />
+                                        <i class="fas fa-search" id="iconone"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+                <div id="manage" class="tabcontent p-3">
+                    <div class="tab">
+                        <button class="tablinks active" onclick="openTab(event, 'check', 'tabcontent3')"
+                            id="defaultOpen">Check flight Status</button>
+                    </div>
+                    <div id="check" class="tabcontent3" style="display: block;">
+                        <form id="form1">
+                            <div class="tabwrap3">
+                                <div class="input-container3">
+                                    <div class="flex-wrapper">
+                                        <div class="flex-wrapper flex-column mr-3 full">
+                                            <h5>Flight Booking Reference</h5>
+                                            <div class="flex-wrapper flex-row-reverse">
+                                                <input class="input-field full" type="text"
+                                                    placeholder="Enter Booking Reference (PNR)" name="airport">
+                                                <i class="fas fa-child icon"></i>
+                                            </div>
+                                        </div>
+                                        <div class="flex-wrapper flex-column full">
+                                            <h5>Surname</h5>
+                                            <div class="flex-wrapper">
+                                                <i class="fas fa-child icon"></i>
+                                                <input class="input-field full" type="text"
+                                                    placeholder="Enter your Surname" name="airport">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-wrapper">
+                                        <div class="flex-wrapper flex-column mr-3 full">
+                                            <br>
+                                        </div>
+                                        <div class="flex-wrapper flex-column full">
+
+                                            <div class="input-submit3 flex-wrapper">
+                                                <input type="submit" value="Check Flight Ticket Status" class="full" />
+                                                <i class="fas fa-check" id="iconone"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section4 class="flightdeals">
+        <div class="flightdeal">
+            <h4>Cheap flight within Nigeria</h4>
+            <marquee behavior="scroll" direction="right">
+                <div class="withindeals">
+                    <div class="card">
+                        <div class="writeup">
+                            <h3>Port Harcourt <span> <i class="fas fa-arrow-right"></i> Abuja</h3>
+                            <p>(ROUND TRIP/ECONOMY)</p>
+                            <h5>₦48,700</h5>
+                        </div>
+                        <img src="/images/Air-Peace.png" alt="airpeace">
+                        <a href="#" id="buk">Book Now</a>
+                    </div>
+                    <div class="card">
+                        <div class="writeup">
+                            <h3>Enugu<span> <i class="fas fa-arrow-right"></i> Lagos</h3>
+                            <p>(ROUND TRIP/ECONOMY)</p>
+                            <h5>₦60,700</h5>
+                        </div>
+                        <img src="/images/Ibom_air_.png" alt="ibom">
+                        <a href="#" id="buk">Book Now</a>
+                    </div>
+                    <div class="card">
+                        <div class="writeup">
+                            <h3>Owerri<span> <i class="fas fa-arrow-right"></i> Lagos</h3>
+                            <p>(ROUND TRIP/ECONOMY)</p>
+                            <h5>₦71,500</h5>
+                        </div>
+                        <img src="/images/united-airlines.png" alt="airpeace">
+                        <a href="#" id="buk">Book Now</a>
+                    </div>
+                    <div class="card">
+                        <div class="writeup">
+                            <h3>Port Harcourt <span> <i class="fas fa-arrow-right"></i> Abuja</h3>
+                            <p>(ROUND TRIP/ECONOMY)</p>
+                            <h5>₦48,700</h5>
+                        </div>
+                        <img src="/images/aero.png" alt="airpeace">
+                        <a href="#" id="buk">Book Now</a>
+                    </div>
+                    <div class="card">
+                        <div class="writeup">
+                            <h3>Enugu<span> <i class="fas fa-arrow-right"></i> Lagos</h3>
+                            <p>(ROUND TRIP/ECONOMY)</p>
+                            <h5>₦60,700</h5>
+                        </div>
+                        <img src="/images/Max_Air_logo.jpg" alt="ibom">
+                        <a href="#" id="buk">Book Now</a>
+                    </div>
+                    <div class="card">
+                        <div class="writeup">
+                            <h3>Owerri<span> <i class="fas fa-arrow-right"></i> Lagos</h3>
+                            <p>(ROUND TRIP/ECONOMY)</p>
+                            <h5>₦71,500</h5>
+                        </div>
+                        <img src="/images/azman-air-logo.jpg" alt="airpeace">
+                        <a href="#" id="buk">Book Now</a>
+                    </div>
+                </div>
+            </marquee>
+        </div>
+        </section>
+        <main class="whyus1">
+            <h4>WHY TRAVELFAST?</h4>
+            <div class="whyus">
+                <div class="why1">
+                    <i class="fas fa-globe-europe icony"></i>
+                    <h5>Global Booking</h5>
+                    <p>We offer great deals of flights <br>worldwide. Compare Internationally <br>and domestic flight
+                        prices, <br>Book your flights with us today.</p>
+                </div>
+                <div class="why2">
+                    <i class="fas fa-check-circle icony"></i>
+                    <h5>Ticketing and Reservation</h5>
+                    <p>travelfast is strategically positioned to <br>offer affordable and cheap flights to<br> our
+                        clients. Our ticketing and reservation <br>executives are trained and equipped to<br> provide
+                        seamless flight routing<br> and conections even at a very short<br> notice to our clients that
+                        will their<br> traveling a worthwhile and<br> stress-free experience.</p>
+                </div>
+                <div class="why3">
+                    <i class="fas fa-plane icony"></i>
+                    <h5>Travel Insurance</h5>
+                    <p>Travel insurance covers travelers traveling <br>internationally or domestically, which<br>
+                        consists
+                        of your medical expenses, trip<br> cancellation and other losses incurred <br>while traveling.
+                    </p>
+                </div>
+                <div class="why1">
+                    <i class="fas fa-money-bill-alt icony"></i>
+                    <h5>Book Now, Pay Later</h5>
+                    <p>Book Now, Pay Later feature allows you<br> to reserve your vacation and pay the rest<br> later.
+                        It offers you the flexibility to make<br> multiple payments over several months.<br> See your
+                        savings take flight.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <section class="vid">
+            <div class="appstore">
+                <h4>TravelFast's Mobile App</h4>
+                <h6>Book and manage your trips on the go. Be notified<br>of our best deals and offers</h6>
+                <div class="app">
+                    <img src="images/store1.jpg" alt="playstore">
+                    <img src="images/store2.jpg" alt="playstore
+                     ">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="socials">
+                <h4>Connect with us:</h4>
+                <a
+                    href="https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp"><i
+                        class="fab fa-google-plus-square"></i>
+                    <a href="https://m.facebook.com/login/?next&ref=dbl&fl&refid=8"><i
+                            class="fab fa-facebook-square"></i>
+                        <a href="https://twitter.com/login"><i class="fab fa-twitter-square"></i></a>
+
+                        <div class="input-container4">
+                            <input class="input-field" type="text" placeholder="Your Email" name="email">
+                            <a href="https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp"
+                                id="sub">Subscribe</a>
+                        </div>
+            </div>
+            <div class="containerone">
+                <div class="menu-wrap flex-space-between">
+
+                    <div class="foot">
+                        <div class="footy">
+                            <h5>book</h5>
+                            <p> <a href="service.html">Cheap Flights</a></p>
+                            <p> <a href="service.html">Cheap Hotels</a></p>
+
+                        </div>
+                        <div class="footy">
+                            <h5>traveller tools</h5>
+                            <p> <a href="about.html">Customer Support</a></p>
+                            <p> <a href="faq.html">Travel Guides</a></p>
+                            <p> <a href="faq.html">FAQs</a></p>
+                        </div>
+                        <div class="footy">
+                            <h5>about travelfast</h5>
+                            <p> <a href="about.html">About Us</a></p>
+                            <p> <a href="faq.html">Careers</a></p>
+                            <p> <a href="faq.html">Affiliate Program</a></p>
+                        </div>
+                        <div class="footy">
+                            <h5>legal</h5>
+                            <p> <a href="about.html">Privacy Policy</a></p>
+                            <p> <a href="about.html">Terms & Conditions</a></p>
+                            <p> <a href="service.html">Our Service Fees</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h6>© 2021. All Right Reserved. travelfast.Com Limited</h6>
+        </footer>
+</body>
+<script>
+    function openTab(evt, cityName, target) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName(target);
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myDate").value;
+        document.getElementById("demo").innerHTML = x;
+    }
+</script>
+
+<script>
+    $('#HappyCarousel').carousel({
+        interval: 2000,
+        wrap: false,
+        itemsPerSlide: 5,
+    });
+</script>
+
+<script>
+    AOS.init();
+    function myFunction() {
+        var x = document.querySelector(".containermenu");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+
+</html>

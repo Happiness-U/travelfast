@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="shortcut icon" href="images/retii.png">
+    <title>complaint</title>
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <div class="containerone">
+                <div class="flex-wrapper flex-space-between">
+                    <div class="contact-link flex-no-grow">
+                        <a href="tel:+2349043609897"> <i class="fa fa-phone"></i> +2349043609897</a>
+                        <a href="#" id="sp"> <i class="fab fa-whatsapp"></i> chat with us</a>
+                        <a href="mailto:info@travelfast.com"> <i class="fa fa-envelope"></i> info@travelfast.com</a>
+                    </div>
+                    <div class="flex-no-grow">
+                        <select name="names" id="curr">
+                            <option value="currency">NAIRA</option>
+                            <option value="currency">USD</option>
+                        </select>
+                        <a href="index.html" id="sp"> login</a>
+                        <a href="signup.html"> signup</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-menu">
+            <div class="containermenu">
+                <div class="menu-wrap flex-space-between">
+                    <img src="images/logo.png" id="logo" alt="">
+                    <ul id="secondnav">
+                        <li><a href="homepage.html">home</a></li>
+                        <li><a href="homepage.html">flight</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="service.html">our services</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="complaint.html">complaint/feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img src="images/logo.png" id="logophone" alt="">
+        <a href="javascript:void(0);" class="iconmenu" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <img src="images/banner-acp.png" alt="" width="100%">
+    </header>
+    <div class="containerone">
+        <div class="wellog1">
+            <div class="wellog">
+                <h2>For Your Feedback/Complaints </h2>
+                <p>Just fill out the form and we'll respond to you right way.</p>
+            </div>
+            <i class="fas fa-comments con"></i>
+        </div>
+        <div class="wrapper">
+
+            <form class="form">
+                <h5>FULLNAME</h5>
+                <input type="text" id="place" placeholder="Full Name" />
+                <h5>EMAIL</h5>
+                <input type="text" id="place" placeholder="Email" />
+                <h5>PHONE NUMBER </h5>
+                <div class="twoof">
+                    <label for="phone">
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your number"
+                            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
+                    </label>
+                    <br>
+
+                    <h5>TYPE</h5>
+                    <select name="names" id="type">
+                        <option value="type">Complaint</option>
+                        <option value="type">Feedback</option>
+                    </select>
+
+                </div>
+                <br>
+                <label for="subject">MESSAGE</label>
+                <textarea id="subject" name="subject" placeholder="Please enter your message here.. "
+                    style="height:200px"></textarea>
+
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn">Cancel form</button>
+                    <button type="submit" class="signupbtn">Submit form</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="socials">
+            <h4>Connect with us:</h4>
+            <a href="https://accounts.google.com/signin/v2"><i class="fab fa-google-plus-square"></i>
+                <a href="https://m.facebook.com/login/?next&ref=dbl&fl&refid=8"><i class="fab fa-facebook-square"></i>
+                    <a href="https://twitter.com/login"><i class="fab fa-twitter-square"></i></a>
+                    <div class="input-container4">
+                        <input class="input-field" type="text" placeholder="Your Email" name="email">
+                        <a href="https://accounts.google.com/signin/v2" id="sub">Subscribe</a>
+                    </div>
+        </div>
+        <div class="containerone">
+            <div class="menu-wrap flex-space-between">
+
+                <div class="foot">
+                    <div class="footy">
+                        <h5>book</h5>
+                        <p> <a href="service">Cheap Flights</a></p>
+                        <p> <a href="about.html">Cheap Hotels</a></p>
+
+                    </div>
+                    <div class="footy">
+                        <h5>traveller tools</h5>
+                        <p> <a href="faq.html">Customer Support</a></p>
+                        <p> <a href="about.html">Travel Guides</a></p>
+                        <p> <a href="faq.html">FAQs</a></p>
+                    </div>
+                    <div class="footy">
+                        <h5>about travelfast</h5>
+                        <p> <a href="about.html">About Us</a></p>
+                        <p> <a href="faq.html">Careers</a></p>
+                        <p> <a href="faq.html">Affiliate Program</a></p>
+                    </div>
+                    <div class="footy">
+                        <h5>legal</h5>
+                        <p> <a href="about.html">Privacy Policy</a></p>
+                        <p> <a href="about.html">Terms & Conditions</a></p>
+                        <p> <a href="about.html">Our Service Fees</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h6>© 2021. All Right Reserved. travelfast.Com Limited</h6>
+
+
+    </footer>
+</body>
+
+<script>
+    AOS.init();
+    function myFunction() {
+        var x = document.querySelector(".containermenu");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+
+</html>

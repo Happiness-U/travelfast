@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" /> 
+    <title>sidebar menu</title>
+</head>
+<style>
+  *{
+    box-sizing: border-box;
+  }
+    body {font-family: "Lato", sans-serif;}
+        
+    .topnav {
+        margin-left: 160px;
+        top: 0;
+        padding: 0;
+        max-width: 160%;
+    }
+     form.example input[type=text] {
+      position: absolute;
+  padding: 10px;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  margin-left: 6%;
+  width: 80%;
+  background:white;
+  box-shadow: 1px 2px  2px rgba(243, 232, 232, 0.897);
+    
+  
+}
+form.example button {
+  position: relative;
+  width: 6%;
+  margin-left: 1%;
+  padding: 10px;
+  text-align: right;
+  background-color: white; 
+  outline: none;
+  border: none;
+  color: rgb(158, 156, 156);
+  font-size: 17px;
+  box-shadow:  -1px 2px  2px rgba(243, 232, 232, 0.897);
+  cursor: pointer;
+}
+
+    
+    .sidebar {
+      height: 100%;
+      width: 160px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 16px;
+    }
+    
+    .sidebar a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #dfdddd;
+      display: block;
+    }
+    
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+    
+    .main {
+      margin-left: 160px; /* Same as the width of the sidenav */
+      padding: 0px 10px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidebar {padding-top: 15px;}
+      .sidebar a {font-size: 18px;}
+    }
+    table {
+      margin: 5% 0;
+      text-transform: uppercase;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 0.80rem;
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+       border: 1px solid rgb(241, 239, 239);
+}
+th, td {
+  text-align: left;
+  padding: 8px 16px;
+}
+tr {
+  border: 5px solid rgb(241, 239, 239);
+}
+tr:nth-child(even) {
+  background-color: #f2f2f267;
+}
+td a {
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 5% 10%;
+  color: #111;
+  font-weight: 500;
+  font-size: .70rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgba(69, 252, 191, 0.233);
+}
+#status {
+  font-size: 0.90rem;
+  padding: 5%;
+  font-weight: 550;
+  border: 1px solid rgba(0, 0, 0, 0.151);
+}
+    </style>
+<body>
+    
+      <div class="topnav">
+        <form class="example" action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    
+    <div class="sidebar">
+        <a href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#services"><i class="fa fa-fw fa-wrench"></i> Services</a>
+        <a href="#clients"><i class="fa fa-fw fa-user"></i> Clients</a>
+        <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+      </div>
+
+      
+      <div class="main">
+        <table>
+          <tr id="styleme">
+            <th>s/no</th>
+            <th>importer</th>
+            <th>vessel name</th>
+            <th>shuttle vessel</th>
+            <th>on account of</th>
+            <th>discharge depot</th>
+            <th>discharge date</th>
+            <th>discharge liters</th>
+            <th>status</th>
+            <th>let me see</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>nnpc</td>
+            <td>titanic</td>
+            <td>sub-titanic</td>
+            <td>forte oil</td>
+            <td>conoil tank farm</td>
+            <td>20th july 2021</td>
+            <td>500,000,000</td>
+            <td> <a href="#" id="su"> successful</a> </td>
+            <td> <form action="/action_page.php">
+              <select name="active" id="status">
+                  <option value="active">Active</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+              </select> 
+            </form>
+            </td>
+          </tr>
+           <tr>
+            <td>2</td>
+            <td>nnpc</td>
+            <td>titanic</td>
+            <td>sub-titanic</td>
+            <td>forte oil</td>
+            <td>conoil tank farm</td>
+            <td>20th july 2021</td>
+            <td>500,000,000</td>
+            <td> <a href="#" id="su"> successful</a> </td>
+            <td> <form action="/action_page.php">
+              <select name="active" id="status">
+                  <option value="active">Active</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+              </select> 
+            </form>
+            </td>
+          </tr>
+           <tr>
+            <td>3</td>
+            <td>nnpc</td>
+            <td>titanic</td>
+            <td>sub-titanic</td>
+            <td>forte oil</td>
+            <td>conoil tank farm</td>
+            <td>20th july 2021</td>
+            <td>500,000,000</td>
+            <td> <a href="#" id="su"> successful</a> </td>
+            <td> <form action="/action_page.php">
+              <select name="active" id="status">
+                  <option value="active">Active</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+              </select> 
+            </form>
+            </td>
+          </tr> 
+          <tr>
+            <td>4</td>
+            <td>nnpc</td>
+            <td>titanic</td>
+            <td>sub-titanic</td>
+            <td>forte oil</td>
+            <td>conoil tank farm</td>
+            <td>20th july 2021</td>
+            <td>500,000,000</td>
+            <td> <a href="#" id="su"> successful</a> </td>
+            <td> <form action="/action_page.php">
+              <select name="active" id="status">
+                  <option value="active">Active</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+              </select> 
+            </form>
+            </td>
+          </tr> 
+           <tr>
+            <td>5</td>
+            <td>nnpc</td>
+            <td>titanic</td>
+            <td>sub-titanic</td>
+            <td>forte oil</td>
+            <td>conoil tank farm</td>
+            <td>20th july 2021</td>
+            <td>500,000,000</td>
+            <td> <a href="#" id="su"> successful</a> </td>
+            <td> <form action="/action_page.php">
+              <select name="active" id="status">
+                  <option value="active">Active</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+              </select> 
+            </form>
+            </td>
+          </tr>
+           <tr>
+            <td>6</td>
+            <td>nnpc</td>
+            <td>titanic</td>
+            <td>sub-titanic</td>
+            <td>forte oil</td>
+            <td>conoil tank farm</td>
+            <td>20th july 2021</td>
+            <td>500,000,000</td>
+            <td> <a href="#" id="su"> successful</a> </td>
+            <td> <form action="/action_page.php">
+              <select name="active" id="status">
+                  <option value="active">Active</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+              </select> 
+            </form>
+            </td>
+          </tr>
+           <tr>
+            <td>7</td>
+            <td>nnpc</td>
+            <td>titanic</td>
+            <td>sub-titanic</td>
+            <td>forte oil</td>
+            <td>conoil tank farm</td>
+            <td>20th july 2021</td>
+            <td>500,000,000</td>
+            <td> <a href="#" id="su"> successful</a> </td>
+            <td> <form action="/action_page.php">
+              <select name="active" id="status">
+                  <option value="active">Active</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+              </select> 
+            </form>
+            </td>
+          </tr> 
+          <tr>
+            <td>8</td>
+            <td>nnpc</td>
+            <td>titanic</td>
+            <td>sub-titanic</td>
+            <td>forte oil</td>
+            <td>conoil tank farm</td>
+            <td>20th july 2021</td>
+            <td>500,000,000</td>
+            <td> <a href="#" id="su"> successful</a> </td>
+            <td> <form action="/action_page.php">
+              <select name="active" id="status">
+                  <option value="active">Active</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+              </select> 
+            </form>
+            </td>
+          </tr> 
+           <tr>
+            <td>9</td>
+            <td>nnpc</td>
+            <td>titanic</td>
+            <td>sub-titanic</td>
+            <td>forte oil</td>
+            <td>conoil tank farm</td>
+            <td>20th july 2021</td>
+            <td>500,000,000</td>
+            <td> <a href="#" id="su"> successful</a> </td>
+            <td> <form action="/action_page.php">
+              <select name="active" id="status">
+                  <option value="active">Active</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+              </select> 
+            </form>
+            </td>
+          </tr>
+           <tr>
+            <td>10</td>
+            <td>nnpc</td>
+            <td>titanic</td>
+            <td>sub-titanic</td>
+            <td>forte oil</td>
+            <td>conoil tank farm</td>
+            <td>20th july 2021</td>
+            <td>500,000,000</td>
+            <td> <a href="#" id="su"> successful</a> </td>
+            <td> <form action="/action_page.php">
+              <select name="active" id="status">
+                  <option value="active">Active</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+              </select> 
+            </form>
+            </td>
+          </tr>
+           <tr>
+            <td>11</td>
+            <td>nnpc</td>
+            <td>titanic</td>
+            <td>sub-titanic</td>
+            <td>forte oil</td>
+            <td>conoil tank farm</td>
+            <td>20th july 2021</td>
+            <td>500,000,000</td>
+            <td> <a href="#" id="su"> successful</a> </td>
+            <td> <form action="/action_page.php">
+              <select name="active" id="status">
+                  <option value="active">Active</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+              </select> 
+            </form>
+            </td>
+          </tr> 
+          <tr>
+            <td>12</td>
+            <td>nnpc</td>
+            <td>titanic</td>
+            <td>sub-titanic</td>
+            <td>forte oil</td>
+            <td>conoil tank farm</td>
+            <td>20th july 2021</td>
+            <td>500,000,000</td>
+            <td> <a href="#" id="su"> successful</a> </td>
+            <td> <form action="/action_page.php">
+              <select name="active" id="status">
+                  <option value="active">Active</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+              </select> 
+            </form>
+            </td>
+          </tr> 
+           <tr>
+            <td>13</td>
+            <td>nnpc</td>
+            <td>titanic</td>
+            <td>sub-titanic</td>
+            <td>forte oil</td>
+            <td>conoil tank farm</td>
+            <td>20th july 2021</td>
+            <td>500,000,000</td>
+            <td> <a href="#" id="su"> successful</a> </td>
+            <td> <form action="/action_page.php">
+              <select name="active" id="status">
+                  <option value="active">Active</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+              </select> 
+            </form>
+            </td>
+          </tr>
+           <tr>
+            <td>14</td>
+            <td>nnpc</td>
+            <td>titanic</td>
+            <td>sub-titanic</td>
+            <td>forte oil</td>
+            <td>conoil tank farm</td>
+            <td>20th july 2021</td>
+            <td>500,000,000</td>
+            <td> <a href="#" id="su"> successful</a> </td>
+            <td> <form action="/action_page.php">
+              <select name="active" id="status">
+                  <option value="active">Active</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+              </select> 
+            </form>
+            </td>
+          </tr>
+           <tr>
+            <td>15</td>
+            <td>nnpc</td>
+            <td>titanic</td>
+            <td>sub-titanic</td>
+            <td>forte oil</td>
+            <td>conoil tank farm</td>
+            <td>20th july 2021</td>
+            <td>500,000,000</td>
+            <td> <a href="#" id="su"> successful</a> </td>
+            <td> <form action="/action_page.php">
+              <select name="active" id="status">
+                  <option value="active">Active</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+              </select> 
+            </form>
+            </td>
+          </tr> 
+          <tr>
+            <td>16</td>
+            <td>nnpc</td>
+            <td>titanic</td>
+            <td>sub-titanic</td>
+            <td>forte oil</td>
+            <td>conoil tank farm</td>
+            <td>20th july 2021</td>
+            <td>500,000,000</td>
+            <td> <a href="#" id="su"> successful</a> </td>
+            <td> <form action="/action_page.php">
+              <select name="active" id="status">
+                  <option value="active">Active</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+              </select> 
+            </form>
+            </td>
+          </tr>
+        </table>
+        
+      </div>
+</body>
+</html>

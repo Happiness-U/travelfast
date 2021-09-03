@@ -9,6 +9,7 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/retii.png" style="font-size: larger;">
     <title>travelFast</title>
 </head>
 
@@ -27,7 +28,7 @@
                             <option value="currency">NAIRA</option>
                             <option value="currency">USD</option>
                         </select>
-                        <a href="index.html" id="sp"> login</a>
+                        <a href="signin.html" id="sp"> login</a>
                         <a href="signup.html"> signup</a>
                     </div>
                 </div>
@@ -39,8 +40,16 @@
                 <div class="menu-wrap flex-space-between">
                     <img src="images/logo.png" id="logo" alt="">
                     <ul id="secondnav">
-                        <li><a href="homepage.html">home</a></li>
-                        <li><a href="homepage.html">flight</a></li>
+                        <li class="d-none d-m-block">
+                            <div class="flex-wrapper flex-row flex-space-between p-3 shift">
+                                <h5>MENU</h5>
+                                <h5 class="MobileMenuToggle">
+                                    CLOSEx
+                                </h5>
+                            </div>
+                        </li>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="index.html">flight</a></li>
                         <li><a href="about.html">about</a></li>
                         <li><a href="service.html">our services</a></li>
                         <li><a href="faq.html">FAQs</a></li>
@@ -49,8 +58,9 @@
                 </div>
             </div>
         </div>
+
         <img src="images/logo.png" id="logophone" alt="">
-        <a href="javascript:void(0);" class="iconmenu" onclick="myFunction()">
+        <a href="javascript:void(0);" class="iconmenu MobileMenuToggle">
             <i class="fa fa-bars"></i>
         </a>
         <div class="styleme"></div>
@@ -102,15 +112,22 @@
         </div>
     </section>
     <footer class="footer">
-        <div class="socials">
-            <h4>Connect with us:</h4>
-            <a href="https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp"><i class="fab fa-google-plus-square"></i>
-                <a href="https://m.facebook.com/login/?next&ref=dbl&fl&refid=8"><i class="fab fa-facebook-square"></i>
-                    <a href="https://twitter.com/login"><i class="fab fa-twitter-square"></i></a>
-                    <div class="input-container4">
-                        <input class="input-field" type="text" placeholder="Your Email" name="email">
-                        <a href="https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp" id="sub">Subscribe</a>
-                    </div>
+        <div class="containeronefoot">
+            <div class="socials">
+                <h4>Connect with us:</h4>
+                <a
+                    href="https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp"><i
+                        class="fab fa-google-plus-square"></i>
+                    <a href="https://m.facebook.com/login/?next&ref=dbl&fl&refid=8"><i
+                            class="fab fa-facebook-square"></i>
+                        <a href="https://twitter.com/login"><i class="fab fa-twitter-square"></i></a>
+
+                        <div class="input-container4">
+                            <input type="text" placeholder="Your Email" name="email">
+                            <a href="https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp"
+                                id="sub">Subscribe</a>
+                        </div>
+            </div>
         </div>
         <div class="containerone">
             <div class="menu-wrap flex-space-between">
@@ -145,6 +162,8 @@
         <h6>© 2021. All Right Reserved. travelfast.Com Limited</h6>
     </footer>
 </body>
+
+<script src="./script.js"></script>
 
 <script>
     AOS.init();

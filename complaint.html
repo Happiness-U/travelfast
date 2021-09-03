@@ -12,7 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style3.css">
-    <link rel="shortcut icon" href="images/retii.png">
+    <link rel="shortcut icon" href="images/retii.png" style="font-size: larger;">
     <title>complaint</title>
 </head>
 
@@ -31,7 +31,7 @@
                             <option value="currency">NAIRA</option>
                             <option value="currency">USD</option>
                         </select>
-                        <a href="index.html" id="sp"> login</a>
+                        <a href="signin.html" id="sp"> login</a>
                         <a href="signup.html"> signup</a>
                     </div>
                 </div>
@@ -43,8 +43,16 @@
                 <div class="menu-wrap flex-space-between">
                     <img src="images/logo.png" id="logo" alt="">
                     <ul id="secondnav">
-                        <li><a href="homepage.html">home</a></li>
-                        <li><a href="homepage.html">flight</a></li>
+                        <li class="d-none d-m-block">
+                            <div class="flex-wrapper flex-row flex-space-between p-3">
+                                <h5>MENU</h5>
+                                <h5 class="MobileMenuToggle">
+                                    CLOSEx
+                                </h5>
+                            </div>
+                        </li>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="index.html">flight</a></li>
                         <li><a href="about.html">about</a></li>
                         <li><a href="service.html">our services</a></li>
                         <li><a href="faq.html">FAQs</a></li>
@@ -53,13 +61,14 @@
                 </div>
             </div>
         </div>
+
         <img src="images/logo.png" id="logophone" alt="">
-        <a href="javascript:void(0);" class="iconmenu" onclick="myFunction()">
+        <a href="javascript:void(0);" class="iconmenu MobileMenuToggle">
             <i class="fa fa-bars"></i>
         </a>
         <img src="images/banner-acp.png" alt="" width="100%">
     </header>
-    <div class="containerone">
+    <div class="containerone complaint">
         <div class="wellog1">
             <div class="wellog">
                 <h2>For Your Feedback/Complaints </h2>
@@ -70,7 +79,7 @@
         <div class="wrapper">
 
             <form class="form">
-                <h5>FULLNAME</h5>
+                <h5>FULL NAME</h5>
                 <input type="text" id="place" placeholder="Full Name" />
                 <h5>EMAIL</h5>
                 <input type="text" id="place" placeholder="Email" />
@@ -81,8 +90,6 @@
                             pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
                     </label>
                     <br>
-
-                    <h5>TYPE</h5>
                     <select name="names" id="type">
                         <option value="type">Complaint</option>
                         <option value="type">Feedback</option>
@@ -150,6 +157,8 @@
 
     </footer>
 </body>
+
+<script src="./script.js"></script>
 
 <script>
     AOS.init();

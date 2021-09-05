@@ -525,8 +525,8 @@ input[type="submit"]{
       color: #fff;
       font-weight: bold;
       padding: 2%;
-      border-end-end-radius: 20px;
-      border-top-right-radius: 20px;
+      border-end-end-radius: 0px;
+      border-top-right-radius: 0px;
       text-decoration: none;
       margin-bottom: 15px;
       margin-top: 10px; 

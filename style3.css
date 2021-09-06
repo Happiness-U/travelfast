@@ -625,8 +625,8 @@ button:hover, a:hover {
     .input-container4 input[type="text"]{
       width: 70%;
       outline: none;
-      border: none;
-      margin-right: -10px;
+      border-radius: 5px;
+      margin-right: 10px;
       margin-bottom: 15px;
       margin-top: 10px 
      } 
@@ -635,8 +635,8 @@ button:hover, a:hover {
       color: #fff;
       font-weight: bold;
       padding: 1%;
-      border-end-end-radius: 20px;
-      border-top-right-radius: 20px;
+      border-end-end-radius: 5px;
+      border-top-right-radius: 5px;
       text-decoration: none;
       margin-bottom: 15px;
       margin-top: 10px; 
@@ -644,6 +644,8 @@ button:hover, a:hover {
 .socials > a i {
   display: inline-block;
   padding: 5px;
+  margin-bottom: 15px;
+  margin-top: 10px;
   font-size: 2rem;
 }
 .socials > a:hover{
@@ -1143,52 +1145,45 @@ font-size: 2rem;
    display: none;
   }
   input[type="submit"]{
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-radius: 5px;
     background-color: #020180;
     color: white;
     font-size: 1.3rem;
+    padding: 5px;
     font-weight: normal;
   }
+  .input-field {
+    padding: 5px 15px; 
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  input[type="date"]{
+    width: 80%;
+    outline: none;
+    padding: 5px 15px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
   .icon {
-    padding: 5px;
-    font-size:15px;
-    min-width: 30px; 
-    line-height: 2;
+    display: none;
   }
   .iconspace {
-    padding: 5px 10px;
-    font-size: 15px;
-    background: #eee; 
-    min-width: 30px; 
-    margin-left: 0px; 
-    line-height: 2; 
+    display: none;
   }
   .icon3{
-    padding: 10px;
-    font-size: 15px;
-    min-width: 30px; 
-    margin-left: 0;
+    display: none;
   }
   .iconspace3{
-    padding: 8px;
-    font-size: 15px;
-    min-width: 30px; 
+    display: none;
+    
   }
   #iconone{
-    padding: 10px;
-    font-size: 14px;
-    color: #fff;
-    text-align: center; 
-    background-color: #020180;
-    line-height: 1; 
-    margin-right: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    display: none;
   }
   #adult { 
     width: 30%; 
-    padding: 10px 15px; 
+    padding: 5px 15px; 
     outline: none;
 
   } 
@@ -1227,6 +1222,7 @@ font-size: 2rem;
         outline: none;
         border: none;
         margin-left: 5%;
+        margin-right: 5%;
         margin-bottom: 15px;
         margin-top: 10px 
        } 
@@ -1235,8 +1231,7 @@ font-size: 2rem;
         color: #fff;
         font-weight: bold;
         padding: 1%;
-        border-end-end-radius: 0px;
-        border-top-right-radius: 0px;
+        border-radius: 0;
         text-decoration: none;
         margin-bottom: 15px;
         margin-top: 10px; 

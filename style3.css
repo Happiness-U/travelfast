@@ -1047,7 +1047,13 @@ font-size: 2rem;
   font-size: 1.5rem;
   font-family: cursive;
 }
+.flex-column h5 {
+  text-align: left;
+}
+.seatme h6 {
+  text-align: left;
 
+}
 
 @media screen and (max-width:750px) {
     .topnav {
@@ -1473,6 +1479,9 @@ font-size: 2rem;
   display: none;
 }
 .dh{
+  display: none;
+}
+.seatme h6 {
   display: none;
 }
 }

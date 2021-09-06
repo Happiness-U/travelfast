@@ -16,7 +16,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gloria+Hallelujah&family=Roboto&family=Shrikhand&display=swap');
     </style>
-     <link rel="shortcut icon" href="images/retii.png" style="font-size: larger;">
+    <link rel="shortcut icon" href="images/retii.png" style="font-size: larger;">
     <title>HomePage</title>
 </head>
 
@@ -143,11 +143,16 @@
                         <form id="form1">
                             <div class="tabwrap">
                                 <div class="flex-wrapper flex-column flex-s-row mb-s-3">
-                                    <div class="flex-wrapper flex-row flex-grow mmb-3 mr-s-3">
-                                        <i class=" flex-no-grow fas fa-plane-departure icon"></i>
-                                        <input class="input-field flex-grow" type="text"
-                                            placeholder="Enter name of city or airport" name="airport"
-                                            list="fromWhereList" name="fromWhere" id="fromWhere">
+                                    <div class=" flex-grow mmb-3 mr-s-3">
+                                        <div class="flex-wrapper flex-column">
+                                            <h5>Flying from</h5>
+                                            <div class="flex-wrapper">
+                                                <i class=" flex-no-grow fas fa-plane-departure icon"></i>
+                                                <input class="input-field flex-grow" type="text"
+                                                    placeholder="Enter name of city or airport" name="airport"
+                                                    list="fromWhereList" name="fromWhere" id="fromWhere">
+                                            </div>
+                                        </div>
                                     </div>
                                     <datalist id="fromWhereList">
                                         <option value="Abuja Nnamdi Azikiwe International Airport (ABV)">
@@ -174,11 +179,16 @@
                                         <option value="Anambra International Airport">
                                     </datalist>
 
-                                    <div class="flex-wrapper flex-row flex-grow mmb-3">
-                                        <i class="fas fa-plane-arrival iconspace flex-no-grow"></i>
-                                        <input class="input-field flex-grow" type="text"
-                                            placeholder="Enter name of city or airport" name="airport"
-                                            list="fromWhereList" name="toWhere" id="towWhere">
+                                    <div class=" flex-grow mmb-3 mr-s-3">
+                                        <div class="flex-wrapper flex-column">
+                                            <h5>Flying to</h5>
+                                            <div class="flex-wrapper">
+                                                <i class="fas fa-plane-arrival iconspace flex-no-grow"></i>
+                                                <input class="input-field flex-grow" type="text"
+                                                    placeholder="Enter name of city or airport" name="airport"
+                                                    list="fromWhereList" name="toWhere" id="towWhere">
+                                            </div>
+                                        </div>
                                     </div>
                                     <datalist id="towhereList">
                                         <option value="Abuja Nnamdi Azikiwe International Airport (ABV)">
@@ -211,17 +221,27 @@
                             <div class="tabwrap">
 
                                 <div class="flex-wrapper flex-column flex-s-row mb-s-3">
-                                    <div class="flex-wrapper flex-row flex-grow mmb-3 mr-s-3">
-                                        <i class=" flex-no-grow far fa-calendar-alt icon"></i>
-                                        <input type="date" class=" flex-grow" id="myDate" value="date">
+                                    <div class=" flex-grow mmb-3 mr-s-3">
+                                        <div class="flex-wrapper flex-column">
+                                            <h5>Departing</h5>
+                                            <div class="flex-wrapper">
+                                                <i class=" flex-no-grow far fa-calendar-alt icon"></i>
+                                                <input type="date" class=" flex-grow" id="myDate" value="date">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="flex-wrapper flex-row flex-grow mmb-3 ph">
-                                        <i class=" flex-no-grow fas fa-chair iconspace"></i>
-                                        <select name="names" id="seatclass" class="flex-grow">
-                                            <option value="select seat">Economy Class</option>
-                                            <option value="business">Business Class</option>
-                                            <option value="business ">First Class</option>
-                                        </select>
+                                    <div class=" flex-grow mmb-3 mr-s-3 ph">
+                                        <div class="flex-wrapper flex-column">
+                                            <h5>Seat Class</h5>
+                                            <div class="flex-wrapper">
+                                                <i class=" flex-no-grow fas fa-chair iconspace"></i>
+                                                <select name="names" id="seatclass" class="flex-grow">
+                                                    <option value="select seat">Economy Class</option>
+                                                    <option value="business">Business Class</option>
+                                                    <option value="business ">First Class</option>
+                                                </select>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -293,11 +313,16 @@
                         <form id="form1">
                             <div class="tabwrap">
                                 <div class="flex-wrapper flex-column flex-s-row mb-s-3">
-                                    <div class="flex-wrapper flex-row flex-grow mmb-3 mr-s-3">
-                                        <i class=" flex-no-grow fas fa-plane-departure icon"></i>
-                                        <input class="input-field flex-grow" type="text"
-                                            placeholder="Enter name of city or airport" name="airport"
-                                            list="fromWhereList" name="fromWhere" id="fromWhere">
+                                    <div class=" flex-grow mmb-3 mr-s-3">
+                                        <div class="flex-wrapper flex-column">
+                                            <h5>Flying from</h5>
+                                            <div class="flex-wrapper">
+                                                <i class=" flex-no-grow fas fa-plane-departure icon"></i>
+                                                <input class="input-field flex-grow" type="text"
+                                                    placeholder="Enter name of city or airport" name="airport"
+                                                    list="fromWhereList" name="fromWhere" id="fromWhere">
+                                            </div>
+                                        </div>
                                     </div>
                                     <datalist id="fromWhereList">
                                         <option value="Abuja Nnamdi Azikiwe International Airport (ABV)">
@@ -324,11 +349,16 @@
                                         <option value="Anambra International Airport">
                                     </datalist>
 
-                                    <div class="flex-wrapper flex-row flex-grow mmb-3">
-                                        <i class="fas fa-plane-arrival iconspace flex-no-grow"></i>
-                                        <input class="input-field flex-grow" type="text"
-                                            placeholder="Enter name of city or airport" name="airport"
-                                            list="fromWhereList" name="toWhere" id="towWhere">
+                                    <div class=" flex-grow mmb-3 mr-s-3">
+                                        <div class="flex-wrapper flex-column">
+                                            <h5>Flying to</h5>
+                                            <div class="flex-wrapper">
+                                                <i class="fas fa-plane-arrival iconspace flex-no-grow"></i>
+                                                <input class="input-field flex-grow" type="text"
+                                                    placeholder="Enter name of city or airport" name="airport"
+                                                    list="fromWhereList" name="toWhere" id="towWhere">
+                                            </div>
+                                        </div>
                                     </div>
                                     <datalist id="towhereList">
                                         <option value="Abuja Nnamdi Azikiwe International Airport (ABV)">
@@ -361,21 +391,34 @@
                             <div class="tabwrap">
 
                                 <div class="flex-wrapper flex-column flex-s-row mb-s-3">
-                                    <div class="flex-wrapper flex-row flex-grow mmb-3 mr-s-3">
-                                        <i class=" flex-no-grow far fa-calendar-alt icon"></i>
-                                        <input type="date" class=" flex-grow" id="myDate" value="date">
+                                    <div class=" flex-grow mmb-3 mr-s-3">
+                                        <div class="flex-wrapper flex-column">
+                                            <h5>Departure date</h5>
+                                            <div class="flex-wrapper">
+                                                <i class=" flex-no-grow far fa-calendar-alt icon"></i>
+                                                <input type="date" class=" flex-grow" id="myDate" value="date">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="flex-wrapper flex-row flex-grow mmb-3 mr-s-3">
-                                        <i class=" flex-no-grow far fa-calendar-alt icon"></i>
-                                        <input type="date" class=" flex-grow" id="myDate" value="date">
+                                    <div class=" flex-grow mmb-3 mr-s-3">
+                                        <div class="flex-wrapper flex-column">
+                                            <h5>Arrival date</h5>
+                                            <div class="flex-wrapper">
+                                                <i class=" flex-no-grow far fa-calendar-alt icon"></i>
+                                                <input type="date" class=" flex-grow" id="myDate" value="date">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="flex-wrapper flex-row flex-grow mmb-3 ph">
-                                        <i class=" flex-no-grow fas fa-chair iconspace"></i>
-                                        <select name="names" id="seatclass" class="flex-grow">
-                                            <option value="select seat">Economy Class</option>
-                                            <option value="business">Business Class</option>
-                                            <option value="business ">First Class</option>
-                                        </select>
+                                    <div class="flex-wrapper flex-column ph">
+                                        <h5>Seat Class</h5>
+                                        <div class="flex-wrapper">
+                                            <i class=" flex-no-grow fas fa-chair icon"></i>
+                                            <select name="names" id="seatclass" class="flex-grow">
+                                                <option value="select seat">Economy Class</option>
+                                                <option value="business">Business Class</option>
+                                                <option value="business ">First Class</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -447,175 +490,86 @@
                         <form id="form1">
                             <div class="tabwrap">
                                 <div class="flex-wrapper flex-column flex-s-row mb-s-3">
-                                    <div class="flex-wrapper flex-row flex-grow mmb-3 mr-s-3">
-                                        <i class=" flex-no-grow fas fa-plane-departure icon"></i>
-                                        <input class="input-field flex-grow" type="text" placeholder="From Where?"
-                                            name="airport" list="fromWhereList" name="fromWhere" id="fromWhere">
-                                        <datalist id="fromWhereList">
-                                            <option value="Abuja Nnamdi Azikiwe International Airport (ABV)">
-                                            <option value="Akure Airport (AKR)">
-                                            <option value="Bauchi Airport (BCU)">
-                                            <option value="Benin City Airport (BNI)">
-                                            <option value="Calabar Airport (CBQ)">
-                                            <option value="Enugu Airport (ENU)">
-                                            <option value="Ibadan Airport (IBA)">
-                                            <option value="Ilorin Airport (ILR)">
-                                            <option value="Jos Airport (JOS)">
-                                            <option value="Kaduna Airport (KAD)">
-                                            <option value="Aminu Kano International Apt Airport (KAN)">
-                                            <option value="Lagos Murtala Muhammed Airport (LOS)">
-                                            <option value="Maiduguri Airport (MIU)">
-                                            <option value="Makurdi Airport (MDI)">
-                                            <option value="Minna Airport (MXJ)	">
-                                            <option value="Port Harcourt Airport (PHC)">
-                                            <option value="Sokoto Airport (SKO)">
-                                            <option value="Victoria Island Airport (QVL)">
-                                            <option value="Warri Airport (QRW)">
-                                            <option value="Yola Airport (YOL)">
-                                            <option value="Zaria Airport (ZAR)">
-                                            <option value="Anambra International Airport">
-                                        </datalist>
+                                    <div class=" flex-grow mmb-3 mr-s-3">
+                                        <div class="flex-wrapper flex-column">
+                                            <h5>Flying from</h5>
+                                            <div class="flex-wrapper">
+                                                <i class=" flex-no-grow fas fa-plane-departure icon"></i>
+                                                <input class="input-field flex-grow" type="text"
+                                                    placeholder="Enter name of city or airport" name="airport"
+                                                    list="fromWhereList" name="fromWhere" id="fromWhere">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="flex-wrapper flex-row flex-grow mmb-3 mr-s-3">
-                                        <i class=" flex-no-grow fas fa-plane-arrival iconspace"></i>
-                                        <input class="input-field flex-grow" type="text" placeholder="To Where?"
-                                            name="airport" list="tohereList" name="toWhere" id="towWhere">
-                                        <datalist id="towhereList">
-                                            <option value="Abuja Nnamdi Azikiwe International Airport (ABV)">
-                                            <option value="Akure Airport (AKR)">
-                                            <option value="Bauchi Airport (BCU)">
-                                            <option value="Benin City Airport (BNI)">
-                                            <option value="Calabar Airport (CBQ)">
-                                            <option value="Enugu Airport (ENU)">
-                                            <option value="Ibadan Airport (IBA)">
-                                            <option value="Ilorin Airport (ILR)">
-                                            <option value="Jos Airport (JOS)">
-                                            <option value="Kaduna Airport (KAD)">
-                                            <option value="Aminu Kano International Apt Airport (KAN)">
-                                            <option value="Lagos Murtala Muhammed Airport (LOS)">
-                                            <option value="Maiduguri Airport (MIU)">
-                                            <option value="Makurdi Airport (MDI)">
-                                            <option value="Minna Airport (MXJ)	">
-                                            <option value="Port Harcourt Airport (PHC)">
-                                            <option value="Sokoto Airport (SKO)">
-                                            <option value="Victoria Island Airport (QVL)">
-                                            <option value="Warri Airport (QRW)">
-                                            <option value="Yola Airport (YOL)">
-                                            <option value="Zaria Airport (ZAR)">
-                                            <option value="Anambra International Airport">
-                                        </datalist>
+                                    <datalist id="fromWhereList">
+                                        <option value="Abuja Nnamdi Azikiwe International Airport (ABV)">
+                                        <option value="Akure Airport (AKR)">
+                                        <option value="Bauchi Airport (BCU)">
+                                        <option value="Benin City Airport (BNI)">
+                                        <option value="Calabar Airport (CBQ)">
+                                        <option value="Enugu Airport (ENU)">
+                                        <option value="Ibadan Airport (IBA)">
+                                        <option value="Ilorin Airport (ILR)">
+                                        <option value="Jos Airport (JOS)">
+                                        <option value="Kaduna Airport (KAD)">
+                                        <option value="Aminu Kano International Apt Airport (KAN)">
+                                        <option value="Lagos Murtala Muhammed Airport (LOS)">
+                                        <option value="Maiduguri Airport (MIU)">
+                                        <option value="Makurdi Airport (MDI)">
+                                        <option value="Minna Airport (MXJ)	">
+                                        <option value="Port Harcourt Airport (PHC)">
+                                        <option value="Sokoto Airport (SKO)">
+                                        <option value="Victoria Island Airport (QVL)">
+                                        <option value="Warri Airport (QRW)">
+                                        <option value="Yola Airport (YOL)">
+                                        <option value="Zaria Airport (ZAR)">
+                                        <option value="Anambra International Airport">
+                                    </datalist>
+
+                                    <div class=" flex-grow mmb-3 mr-s-3">
+                                        <div class="flex-wrapper flex-column">
+                                            <h5>Flying to</h5>
+                                            <div class="flex-wrapper">
+                                                <i class="fas fa-plane-arrival iconspace flex-no-grow"></i>
+                                                <input class="input-field flex-grow" type="text"
+                                                    placeholder="Enter name of city or airport" name="airport"
+                                                    list="fromWhereList" name="toWhere" id="towWhere">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="flex-wrapper flex-row flex-grow mmb-3 mr-s-3">
-                                        <i class=" flex-no-grow far fa-calendar-alt icon"></i>
-                                        <input type="date" class=" flex-grow" id="myDate" value="date">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tabwrap">
-                                <div class="flex-wrapper flex-column flex-s-row mb-s-3">
-                                    <div class="flex-wrapper flex-row flex-grow mmb-3 mr-s-3">
-                                        <i class=" flex-no-grow fas fa-plane-departure icon"></i>
-                                        <input class="input-field flex-grow" type="text" placeholder="From Where?"
-                                            name="airport" list="fromWhereList" name="fromWhere" id="fromWhere">
-                                        <datalist id="fromWhereList">
-                                            <option value="Abuja Nnamdi Azikiwe International Airport (ABV)">
-                                            <option value="Akure Airport (AKR)">
-                                            <option value="Bauchi Airport (BCU)">
-                                            <option value="Benin City Airport (BNI)">
-                                            <option value="Calabar Airport (CBQ)">
-                                            <option value="Enugu Airport (ENU)">
-                                            <option value="Ibadan Airport (IBA)">
-                                            <option value="Ilorin Airport (ILR)">
-                                            <option value="Jos Airport (JOS)">
-                                            <option value="Kaduna Airport (KAD)">
-                                            <option value="Aminu Kano International Apt Airport (KAN)">
-                                            <option value="Lagos Murtala Muhammed Airport (LOS)">
-                                            <option value="Maiduguri Airport (MIU)">
-                                            <option value="Makurdi Airport (MDI)">
-                                            <option value="Minna Airport (MXJ)	">
-                                            <option value="Port Harcourt Airport (PHC)">
-                                            <option value="Sokoto Airport (SKO)">
-                                            <option value="Victoria Island Airport (QVL)">
-                                            <option value="Warri Airport (QRW)">
-                                            <option value="Yola Airport (YOL)">
-                                            <option value="Zaria Airport (ZAR)">
-                                            <option value="Anambra International Airport">
-                                        </datalist>
-                                    </div>
-                                    <div class="flex-wrapper flex-row flex-grow mmb-3 mr-s-3">
-                                        <i class=" flex-no-grow fas fa-plane-arrival iconspace"></i>
-                                        <input class="input-field flex-grow" type="text" placeholder="To Where?"
-                                            name="airport" list="tohereList" name="toWhere" id="towWhere">
-                                        <datalist id="towhereList">
-                                            <option value="Abuja Nnamdi Azikiwe International Airport (ABV)">
-                                            <option value="Akure Airport (AKR)">
-                                            <option value="Bauchi Airport (BCU)">
-                                            <option value="Benin City Airport (BNI)">
-                                            <option value="Calabar Airport (CBQ)">
-                                            <option value="Enugu Airport (ENU)">
-                                            <option value="Ibadan Airport (IBA)">
-                                            <option value="Ilorin Airport (ILR)">
-                                            <option value="Jos Airport (JOS)">
-                                            <option value="Kaduna Airport (KAD)">
-                                            <option value="Aminu Kano International Apt Airport (KAN)">
-                                            <option value="Lagos Murtala Muhammed Airport (LOS)">
-                                            <option value="Maiduguri Airport (MIU)">
-                                            <option value="Makurdi Airport (MDI)">
-                                            <option value="Minna Airport (MXJ)	">
-                                            <option value="Port Harcourt Airport (PHC)">
-                                            <option value="Sokoto Airport (SKO)">
-                                            <option value="Victoria Island Airport (QVL)">
-                                            <option value="Warri Airport (QRW)">
-                                            <option value="Yola Airport (YOL)">
-                                            <option value="Zaria Airport (ZAR)">
-                                            <option value="Anambra International Airport">
-                                        </datalist>
-                                    </div>
-                                    <div class="flex-wrapper flex-row flex-grow mmb-3 mr-s-3">
-                                        <i class=" flex-no-grow far fa-calendar-alt icon"></i>
-                                        <input type="date" class=" flex-grow" id="myDate" value="date">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tabwrap">
-                                <div class="flex-wrapper flex-column flex-s-row mb-s-3">
-                                    <div class="flex-wrapper flex-row flex-grow mmb-3 mr-s-3">
-                                        <i class=" flex-no-grow fas fa-male icon"></i>
-                                        <select name="names" id="adult" class="flex-grow">
-                                            <option value="adult">1 Adult</option>
-                                            <option value="adult">2 Adult (12yrs+)</option>
-                                            <option value="adult">3 Adult (12yrs+)</option>
-                                            <option value="adult">4 Adult (12yrs+)</option>
-                                            <option value="adult">5 Adult (12yrs+)</option>
-                                            <option value="adult">6 Adult (12yrs+)</option>
-                                            <option value="adult">7 Adult (12yrs+)</option>
-                                            <option value="adult">8 Adult (12yrs+)</option>
-                                            <option value="adult">9 Adult (12yrs+)</option>
-                                        </select>
-                                    </div>
-                                    <div class="flex-wrapper flex-row flex-grow mmb-3 mr-s-3">
-                                        <i class=" flex-no-grow fas fa-child iconspace"></i>
-                                        <select name="names" id="adult" class="flex-grow">
-                                            <option value="child">0 Child</option>
-                                            <option value="child">1 Child</option>
-                                            <option value="child">2 Child (2-11yrs)</option>
-                                            <option value="child">3 Child (2-11yrs)</option>
-                                            <option value="child">4 Child (2-11yrs)</option>
-                                            <option value="child">5 Child (2-11yrs)</option>
-                                            <option value="child">6 Child (2-11yrs)</option>
-                                        </select>
-                                    </div>
-                                    <div class="flex-wrapper flex-row flex-grow mmb-3 ">
-                                        <i class=" flex-no-grow fas fa-child iconspace"></i>
-                                        <select name="names" id="adult" class="flex-grow">
-                                            <option value="infant">0 Infant</option>
-                                            <option value="infant">1 Infant</option>
-                                            <option value="infant">2 Infant (-2yrs)</option>
-                                            <option value="infant">3 Infant (-2yrs)</option>
-                                            <option value="infant">4 Infant(-2yrs)</option>
-                                            <option value="infant">5 Infant (-2yrs)</option>
-                                            <option value="infant">Infant (-2yrs)</option>
-                                        </select>
+                                    <datalist id="towhereList">
+                                        <option value="Abuja Nnamdi Azikiwe International Airport (ABV)">
+                                        <option value="Akure Airport (AKR)">
+                                        <option value="Bauchi Airport (BCU)">
+                                        <option value="Benin City Airport (BNI)">
+                                        <option value="Calabar Airport (CBQ)">
+                                        <option value="Enugu Airport (ENU)">
+                                        <option value="Ibadan Airport (IBA)">
+                                        <option value="Ilorin Airport (ILR)">
+                                        <option value="Jos Airport (JOS)">
+                                        <option value="Kaduna Airport (KAD)">
+                                        <option value="Aminu Kano International Apt Airport (KAN)">
+                                        <option value="Lagos Murtala Muhammed Airport (LOS)">
+                                        <option value="Maiduguri Airport (MIU)">
+                                        <option value="Makurdi Airport (MDI)">
+                                        <option value="Minna Airport (MXJ)	">
+                                        <option value="Port Harcourt Airport (PHC)">
+                                        <option value="Sokoto Airport (SKO)">
+                                        <option value="Victoria Island Airport (QVL)">
+                                        <option value="Warri Airport (QRW)">
+                                        <option value="Yola Airport (YOL)">
+                                        <option value="Zaria Airport (ZAR)">
+                                        <option value="Anambra International Airport">
+                                    </datalist>
+
+                                    <div class=" flex-grow mmb-3 mr-s-3">
+                                        <div class="flex-wrapper flex-column">
+                                            <h5>Departure date</h5>
+                                            <div class="flex-wrapper">
+                                                <i class=" flex-no-grow far fa-calendar-alt icon"></i>
+                                                <input type="date" class=" flex-grow" id="myDate" value="date">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -623,17 +577,146 @@
 
                             <div class="tabwrap">
                                 <div class="flex-wrapper flex-column flex-s-row mb-s-3">
-                                    <div class="flex-wrapper flex-row flex-grow mmb-3 mr-s-3">
-                                        <i class=" flex-no-grow fas fa-chair icon"></i>
-                                        <select name="names" id="seatclass" class="flex-grow">
-                                            <option value="select seat">Economy Class</option>
-                                            <option value="business">Business Class</option>
-                                            <option value="business ">First Class</option>
-                                        </select>
+                                    <div class=" flex-grow mmb-3 mr-s-3">
+                                        <div class="flex-wrapper flex-column">
+                                            <h5>Flying from</h5>
+                                            <div class="flex-wrapper">
+                                                <i class=" flex-no-grow fas fa-plane-departure icon"></i>
+                                                <input class="input-field flex-grow" type="text"
+                                                    placeholder="Enter name of city or airport" name="airport"
+                                                    list="fromWhereList" name="fromWhere" id="fromWhere">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="flex-wrapper flex-row flex-grow mmb-3 mr-s-3">
-                                        <input type="submit" value="SEARCH FLIGHT" class="flex-grow " />
-                                        <i class="fas fa-search" id="iconone"></i>
+                                    <datalist id="fromWhereList">
+                                        <option value="Abuja Nnamdi Azikiwe International Airport (ABV)">
+                                        <option value="Akure Airport (AKR)">
+                                        <option value="Bauchi Airport (BCU)">
+                                        <option value="Benin City Airport (BNI)">
+                                        <option value="Calabar Airport (CBQ)">
+                                        <option value="Enugu Airport (ENU)">
+                                        <option value="Ibadan Airport (IBA)">
+                                        <option value="Ilorin Airport (ILR)">
+                                        <option value="Jos Airport (JOS)">
+                                        <option value="Kaduna Airport (KAD)">
+                                        <option value="Aminu Kano International Apt Airport (KAN)">
+                                        <option value="Lagos Murtala Muhammed Airport (LOS)">
+                                        <option value="Maiduguri Airport (MIU)">
+                                        <option value="Makurdi Airport (MDI)">
+                                        <option value="Minna Airport (MXJ)	">
+                                        <option value="Port Harcourt Airport (PHC)">
+                                        <option value="Sokoto Airport (SKO)">
+                                        <option value="Victoria Island Airport (QVL)">
+                                        <option value="Warri Airport (QRW)">
+                                        <option value="Yola Airport (YOL)">
+                                        <option value="Zaria Airport (ZAR)">
+                                        <option value="Anambra International Airport">
+                                    </datalist>
+
+                                    <div class=" flex-grow mmb-3 mr-s-3">
+                                        <div class="flex-wrapper flex-column">
+                                            <h5>Flying to</h5>
+                                            <div class="flex-wrapper">
+                                                <i class="fas fa-plane-arrival iconspace flex-no-grow"></i>
+                                                <input class="input-field flex-grow" type="text"
+                                                    placeholder="Enter name of city or airport" name="airport"
+                                                    list="fromWhereList" name="toWhere" id="towWhere">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <datalist id="towhereList">
+                                        <option value="Abuja Nnamdi Azikiwe International Airport (ABV)">
+                                        <option value="Akure Airport (AKR)">
+                                        <option value="Bauchi Airport (BCU)">
+                                        <option value="Benin City Airport (BNI)">
+                                        <option value="Calabar Airport (CBQ)">
+                                        <option value="Enugu Airport (ENU)">
+                                        <option value="Ibadan Airport (IBA)">
+                                        <option value="Ilorin Airport (ILR)">
+                                        <option value="Jos Airport (JOS)">
+                                        <option value="Kaduna Airport (KAD)">
+                                        <option value="Aminu Kano International Apt Airport (KAN)">
+                                        <option value="Lagos Murtala Muhammed Airport (LOS)">
+                                        <option value="Maiduguri Airport (MIU)">
+                                        <option value="Makurdi Airport (MDI)">
+                                        <option value="Minna Airport (MXJ)	">
+                                        <option value="Port Harcourt Airport (PHC)">
+                                        <option value="Sokoto Airport (SKO)">
+                                        <option value="Victoria Island Airport (QVL)">
+                                        <option value="Warri Airport (QRW)">
+                                        <option value="Yola Airport (YOL)">
+                                        <option value="Zaria Airport (ZAR)">
+                                        <option value="Anambra International Airport">
+                                    </datalist>
+
+                                    <div class=" flex-grow mmb-3 mr-s-3">
+                                        <div class="flex-wrapper flex-column">
+                                            <h5>Departure date</h5>
+                                            <div class="flex-wrapper">
+                                                <i class=" flex-no-grow far fa-calendar-alt icon"></i>
+                                                <input type="date" class=" flex-grow" id="myDate" value="date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabwrap">
+                                <div class="flex-wrapper flex-column flex-s-row mb-s-3">
+                                    <div class="flex-wrapper flex-row flex-grow  mr-s-3">
+                                        <div class="flex-wrapper flex-row flex-grow mmb-3 mr-3">
+                                            <i class=" flex-no-grow fas fa-male icon"></i>
+                                            <select name="names" id="adult" class="flex-grow">
+                                                <option value="adult">1 Adult</option>
+                                                <option value="adult">2 Adult (12yrs+)</option>
+                                                <option value="adult">3 Adult (12yrs+)</option>
+                                                <option value="adult">4 Adult (12yrs+)</option>
+                                                <option value="adult">5 Adult (12yrs+)</option>
+                                                <option value="adult">6 Adult (12yrs+)</option>
+                                                <option value="adult">7 Adult (12yrs+)</option>
+                                                <option value="adult">8 Adult (12yrs+)</option>
+                                                <option value="adult">9 Adult (12yrs+)</option>
+                                            </select>
+                                        </div>
+                                        <div class="flex-wrapper flex-row flex-grow mmb-3">
+                                            <i class=" flex-no-grow fas fa-child iconspace"></i>
+                                            <select name="names" id="adult" class="flex-grow">
+                                                <option value="child">0 Child</option>
+                                                <option value="child">1 Child</option>
+                                                <option value="child">2 Child (2-11yrs)</option>
+                                                <option value="child">3 Child (2-11yrs)</option>
+                                                <option value="child">4 Child (2-11yrs)</option>
+                                                <option value="child">5 Child (2-11yrs)</option>
+                                                <option value="child">6 Child (2-11yrs)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="flex-wrapper flex-row flex-grow ">
+                                        <div class="flex-wrapper flex-row flex-grow mmb-3 mr-3">
+                                            <i class=" flex-no-grow fas fa-child iconspace"></i>
+                                            <select name="names" id="adult" class="flex-grow">
+                                                <option value="infant">0 Infant</option>
+                                                <option value="infant">1 Infant</option>
+                                                <option value="infant">2 Infant (-2yrs)</option>
+                                                <option value="infant">3 Infant (-2yrs)</option>
+                                                <option value="infant">4 Infant(-2yrs)</option>
+                                                <option value="infant">5 Infant (-2yrs)</option>
+                                                <option value="infant">Infant (-2yrs)</option>
+                                            </select>
+                                        </div>
+                                        <div class="flex-wrapper flex-row flex-grow mmb-3 dh mmr-3">
+                                            <i class=" flex-no-grow fas fa-chair iconspace"></i>
+                                            <select name="names" id="seatclass" class="flex-grow">
+                                                <option value="select seat">Economy Class</option>
+                                                <option value="business">Business Class</option>
+                                                <option value="business ">First Class</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class=" flex-grow mmb-3 mr-s-3 mmr-3">
+                                        <div class="flex-wrapper">
+                                            <input type="submit" value="SEARCH FLIGHT" class="flex-grow " />
+                                            <i class="fas fa-search" id="iconone"></i>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -686,7 +769,7 @@
                                 <i class="fas fa-search" id="iconone"></i>
                             </div>
                             <!-- </div> -->
-                       
+
 
 
 
@@ -818,7 +901,8 @@
 
                             <div class="input-container4">
                                 <div class="flex-wrapper flex-row flex-grow mmb-3 ml-s-3">
-                                    <input class="input-field" type="text" placeholder="Submit email to Join Our Newsletter" name="email"
+                                    <input class="input-field" type="text"
+                                        placeholder="Submit email to Join Our Newsletter" name="email"
                                         class="flex-grow" />
                                     <a href="https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp"
                                         id="sub">Send</a>

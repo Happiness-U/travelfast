@@ -351,18 +351,19 @@ display: block;
         width: 90%; 
         outline: none;
         border: 1px solid #ccc;
-        border-radius: 5px;
+        border-radius: 5px 0 0 5px;
         padding: 7px 15px;
-        margin: 5px;
+        margin-bottom: 15px;
+       margin-top: 10px; 
        } 
       .input-container4 a {
         background-color: rgb(15, 13, 13);
         color: #fff;
         font-weight: bold;
         padding: 7px 5px;
-        margin: 5px;
-        border-end-end-radius: 5px;
-        border-top-right-radius: 5px;
+        margin-bottom: 15px;
+         margin-top: 10px; ;
+        border-radius: 0 5px 5px 0;
         text-decoration: none;  
       }  
  .icon  {
@@ -529,9 +530,10 @@ input[type="password"]{
 
 input[type="submit"]{
 margin-bottom: 10%;
-margin-left: 52%;
+margin-left: 80%;
 font-size: 0.80rem;
 padding: 1% 6%;
+-webkit-background-color: rgb(12, 193, 209);
 background-color: rgb(12, 193, 209);
 color: #fff;
 }
@@ -573,26 +575,21 @@ display: block;
  margin-right: 0%;
 }
 .input-container4  { 
-  width: 80%;  
-   margin: 2% 10%; 
+  width: 90%;  
+   margin-left: 5%; 
  } 
 .input-container4 input[type="text"]{
-  width: 80%; 
-  outline: none;
+  width: 100%;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 7px 15px;
-  margin: 5px;
+  padding: 7px 5px;
+  
  } 
 .input-container4 a {
   background-color: rgb(15, 13, 13);
   color: #fff;
   font-weight: bold;
   padding: 7px 5px;
-  margin: 5px;
-  border-end-end-radius: 5px;
-  border-top-right-radius: 5px;
-  text-decoration: none;  
+   
 }  
 .icon  {
   display: inline-flex;

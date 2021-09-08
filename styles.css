@@ -268,7 +268,8 @@ input[type="submit"]{
   margin-top: 8%;
   justify-content: center;
   background-color: rgba(31, 149, 196, 0.856);
-  color: white;
+  -webkit-background-color: rgb(12, 193, 209);
+  color: #fff;
   font-size: 0.80rem;
   font-weight: 800;
   outline: none;
@@ -366,17 +367,6 @@ input[type="submit"]:hover{
   .socials h4 {
     margin-right: 10%;
   }
-  .input-container4 a {
-    background-color: rgb(15, 13, 13);
-    color: #fff;
-    font-weight: bold;
-    padding: 2%;
-    border-end-end-radius: 20px;
-    border-top-right-radius: 20px;
-    text-decoration: none;
-    margin-bottom: 15px;
-    margin-top: 15px; 
-  }
   .socials > a i {
     display: inline-block;
     padding: 5px;
@@ -387,24 +377,25 @@ input[type="submit"]:hover{
   }
   .input-container4  { 
     width: 30%;  
-   margin-left: 10%; 
+   margin-left: 5%; 
    }  
        .input-container4 input[type="text"]{
          width: 90%; 
          outline: none;
          border: 1px solid #ccc;
-         border-radius: 5px;
-         padding: 7px 15px;
-         margin: 5px;
+         border-radius: 5px 0 0 5px;
+         padding: 7px 5px;
+         margin-bottom: 15px;
+         margin-top: 10px; 
         } 
        .input-container4 a {
          background-color: rgb(15, 13, 13);
          color: #fff;
          font-weight: bold;
          padding: 7px 5px;
-         margin: 5px;
-         border-end-end-radius: 5px;
-         border-top-right-radius: 5px;
+         margin-bottom: 15px;
+         margin-top: 10px; 
+         border-radius: 0 5px 5px 0;
          text-decoration: none;  
        }  
   .icon  {
@@ -562,8 +553,9 @@ opacity: 0.8;
 }
 input[type="submit"]{
   margin-top: 8%;
+  color: #fff;
+  -webkit-background-color: rgb(12, 193, 209);
   background-color: rgba(31, 149, 196, 0.856);
-  color: white;
   border-radius: none;
   font-size: 0.9rem;
   font-weight: normal;
@@ -613,27 +605,20 @@ input[type="submit"]{
    margin-right: 0%;
   }
   .input-container4  { 
-    width: 80%;  
-     margin: 2% 10%; 
+    width: 95%;  
+     margin-left: 2%; 
    } 
   .input-container4 input[type="text"]{
-    width: 80%; 
-    outline: none;
+    width: 100%;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 7px 15px;
-    margin: 5px;
+    padding: 7px 5px; 
    } 
   .input-container4 a {
     background-color: rgb(15, 13, 13);
     color: #fff;
     font-weight: bold;
-    padding: 7px 5px;
-    margin: 5px;
-    border-end-end-radius: 5px;
-    border-top-right-radius: 5px;
-    text-decoration: none;  
-  }  
+    padding: 7px 5px;  
+  }   
   .icon  {
     display: inline-flex;
     margin: 5px 3px;

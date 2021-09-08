@@ -620,13 +620,11 @@ button:hover, a:hover {
 }
   .input-container4 {
   width: 500px;
-  margin-left: 0%;
    }  
     .input-container4 input[type="text"]{
-      width: 70%;
+      width: 100%;
       outline: none;
-      border-radius: 5px;
-      margin-right: 10px;
+      border-radius: 5px 0 0 5px; 
       margin-bottom: 15px;
       margin-top: 10px 
      } 
@@ -635,8 +633,7 @@ button:hover, a:hover {
       color: #fff;
       font-weight: bold;
       padding: 1%;
-      border-end-end-radius: 5px;
-      border-top-right-radius: 5px;
+      border-radius: 0 5px 5px 0;
       text-decoration: none;
       margin-bottom: 15px;
       margin-top: 10px; 
@@ -1221,14 +1218,13 @@ font-size: 2rem;
 }
   .input-container4 {
     width: 90%;
-    margin-left: 0%;
+    margin: 0 auto;
      }  
       .input-container4 input[type="text"]{
         /* width: 80%; */
         outline: none;
         border: none;
-        margin-left: 5%;
-        margin-right: 5%;
+        
         margin-bottom: 15px;
         margin-top: 10px 
        } 
@@ -1237,7 +1233,6 @@ font-size: 2rem;
         color: #fff;
         font-weight: bold;
         padding: 1%;
-        border-radius: 0;
         text-decoration: none;
         margin-bottom: 15px;
         margin-top: 10px; 

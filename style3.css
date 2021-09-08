@@ -1435,22 +1435,21 @@ font-size: 2rem;
   display: flex;
   margin-top: 5px;
   margin-right: 5%;
-  padding: 2px 6px;
+  padding: auto 6px;
 }
 #rapp1{
   display: flex;
- 
   margin-top: 10%;
   font-size: 1.5rem;
   font-weight: bold;
 }
 #rapp1 p {
   margin-right: 5%;
-  color: rgb(252, 160, 24);
+  color: rgb(29, 28, 27);
 }
 #rapp a {
-  font-weight: bold;
   font-size: 1.2rem;
+  font-family: sans-serif;
 }
 #rapp h4{
   font-size: 1.3rem;

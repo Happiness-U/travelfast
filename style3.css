@@ -768,8 +768,7 @@ font-size: 2rem;
 .aboutus1{
   background-color: #016dfa67;
   margin-top: -1%;
-  padding: 5px;
-  
+  padding: 5px; 
 }
 .aboutus1 h5{
   font-family: 'Black Han Sans', sans-serif;
@@ -1454,6 +1453,16 @@ font-size: 2rem;
 #rapp h4{
   font-size: 1.3rem;
 }
+#bghead {
+    background-image:url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTQ0MCAzMjAiPjxwYXRoIGZpbGw9IiMyNzMwMzYiIGZpbGwtb3BhY2l0eT0iMC4xIiBkPSJNMCwyMjRMNDAsMTg2LjdDODAsMTQ5LDE2MCw3NSwyNDAsNDIuN0MzMjAsMTEsNDAwLDIxLDQ4MCwzMkM1NjAsNDMsNjQwLDUzLDcyMCw3NC43QzgwMCw5Niw4ODAsMTI4LDk2MCwxMjhDMTA0MCwxMjgsMTEyMCw5NiwxMjAwLDEwMS4zQzEyODAsMTA3LDEzNjAsMTQ5LDE0MDAsMTcwLjdMMTQ0MCwxOTJMMTQ0MCwwTDE0MDAsMEMxMzYwLDAsMTI4MCwwLDEyMDAsMEMxMTIwLDAsMTA0MCwwLDk2MCwwQzg4MCwwLDgwMCwwLDcyMCwwQzY0MCwwLDU2MCwwLDQ4MCwwQzQwMCwwLDMyMCwwLDI0MCwwQzE2MCwwLDgwLDAsNDAsMEwwLDBaIj48L3BhdGg+PC9zdmc+");
+    background-position: top center;
+    background-size: cover;
+    text-align: center;
+  }
+  #bghead{
+    background-color: #016dfa67;
+    padding: 5%; 
+  }
 }
 
 @media screen and (min-width:749px) { 
